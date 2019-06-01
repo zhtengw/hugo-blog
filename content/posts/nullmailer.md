@@ -5,7 +5,11 @@ draft: false
 toc: true
 images:
 tags:
-  - gentoo linux mail server cron
+  - gentoo 
+  - linux
+  - mail
+  - server
+  - cron
 ---
 
 打算写个脚本，检查linuxdeepin的各个项目的GitHub有无更新，如果有更新便在deepin-overlay自动创建新版本的ebuild，并测试安装，然后把结果发到我邮箱。这便要安装一个命令行的发信系统。Gentoo默认系统已经安装了 **mail-mta/nullmailer** [[1](https://ithelp.ithome.com.tw/articles/10133399)]，我就直接配置它便好了。
