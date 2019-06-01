@@ -1,6 +1,6 @@
 ---
 title: "自动升级deepin ebuild的shell脚本"
-date: 
+date: 2019-06-01T12:14:03+08:00
 draft: false
 toc: true
 images:
