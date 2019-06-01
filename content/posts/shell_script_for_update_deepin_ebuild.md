@@ -5,7 +5,11 @@ draft: false
 toc: true
 images:
 tags:
-  - Bash gentoo gentoo-dev linux Shell
+  - Bash
+  - gentoo
+  - gentoo-dev
+  - linux
+  - Shell
 ---
 
 写了一个 [Shell 脚本](https://github.com/zhtengw/ebuildtools/blob/master/version_bump.sh)，用来自动更新 deepin-overlay 中 deepin 软件的ebuild，脚本的主要功能如下：
