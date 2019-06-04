@@ -13,6 +13,7 @@ tags:
 ---
 
 写了一个 [Shell 脚本](https://github.com/zhtengw/ebuildtools/blob/master/version_bump.sh)，用来自动更新 deepin-overlay 中 deepin 软件的ebuild，脚本的主要功能如下：
+
 * 从 deepin-pkg-list 文件读取列表
 * 对每个列表中的软件，从 ebuild 中读取当前 overlay 中的最新版本和 HOMEPAGE
 * 用 curl 读取 GitHub 仓库中的最新版本
