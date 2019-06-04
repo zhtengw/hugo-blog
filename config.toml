@@ -1,6 +1,6 @@
 baseURL = "https://www.aten.ml"
 languageCode = "zh-hans"
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh-hans"
 title = "Hello ^_^"
 theme = "hermit"
 
