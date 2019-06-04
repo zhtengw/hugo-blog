@@ -65,7 +65,7 @@ code {
   border-radius: 3px;
   padding: 0 3px;
   margin: 0 4px;
-  word-break: break-all;
+  word-wrap: break-word;
   letter-spacing: normal;
 }
 
@@ -146,6 +146,42 @@ table {
 
 .desktop-only, .desktop-only-ib {
   display: none;
+}
+
+// Accessibility
+//
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
 }
 
 // Header & Footer
@@ -263,8 +299,9 @@ table {
 p.img-404 {
   margin: 0;
 
-  img {
-    max-width: 250px;
+  svg {
+    width: 180px;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -274,12 +311,11 @@ p.img-404 {
 
   h1 {
     font-size: 3em;
-    margin: .5rem 0 1rem;
+    margin: .5rem 0;
   }
 
   p {
     margin-top: 0;
-    margin-bottom: .8em;
   }
 
   .btn-404 {
@@ -291,7 +327,6 @@ p.img-404 {
       border-radius: 5px;
       padding: 5px;
       transition-property: color, border-color;
-      word-break: break-all;
 
       &:first-child {
         margin-right: 1em;
@@ -318,6 +353,16 @@ p.img-404 {
 #home-title {
   margin: 0;
   text-align: center;
+}
+
+#home-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-align: center;
+  line-height: normal;
+  font-size: .7em;
+  font-style: italic;
+  opacity: .9;
 }
 
 #home-social {
@@ -375,7 +420,6 @@ p.img-404 {
     margin: 0;
     padding: 0;
     list-style: none;
-
   }
 
   .post-item {
@@ -443,8 +487,10 @@ hr.post-end {
 }
 
 .content {
+  {{- with .Site.Params.justifyContent }}
   text-align: justify;
   text-justify: inter-ideograph; //For IE/Edge
+  {{- end }}
 
   @include aTag;
 
@@ -565,7 +611,7 @@ hr.post-end {
   }
 
   a:hover {
-    border-bottom: 2px solid $theme;
+    border-bottom: 1px solid $theme;
   }
 
   svg {
@@ -593,7 +639,6 @@ hr.post-end {
   margin-bottom: .5em;
   font-size: .8em;
   font-weight: bold;
-  opacity: .8;
 }
 
 #TableOfContents {
@@ -614,9 +659,10 @@ hr.post-end {
   }
 
   a:hover {
-    border-bottom: $theme 2px solid;
+    border-bottom: $theme 1px solid;
   }
 }
+
 
 .post-nav {
   display: flex;
