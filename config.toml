@@ -49,6 +49,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
+  customCSS = ["https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"]
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.

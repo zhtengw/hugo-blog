@@ -125,8 +125,8 @@ const loadComments = () => {
     loadScript(valineJsUrl).then(() => {
       new Valine({
         el: '#comments',
-        appId: 'kowRynN7jiltjKk2lAf8dy51-gzGzoHsz',
-        appKey: 'kEBDOMmjHVAlo0jlQIrmt37O',
+        appId: 'gMsAvNiKzC5jrdfu1TMDg8ji-MdYXbMMI',
+        appKey: 'eUTeelNVJHcbdmjWLF4Vg9S9',
         placeholder: '说点什么吧',
 	visitor: true // 阅读量统计
       });
