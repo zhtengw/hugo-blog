@@ -38,7 +38,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   themeColor = "#8e391a"
 
   homeSubtitle = "随便记录点啥"
-  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  footerCopyright = ' &#183; <a> <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" type="text/javascript"></script><span class="site-uv" title="总访客量"><i class="fa fa-user"></i> <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> </span><span class="site-pv" title="总访问量"><i class="fa fa-eye"></i> <span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></a>'
   # bgImg = ""  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
