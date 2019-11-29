@@ -1,4 +1,4 @@
-baseURL = "https://www.aten.ml"
+baseURL = "/"
 languageCode = "zh-hans"
 defaultContentLanguage = "zh-hans"
 title = "Hello ^_^"
